@@ -70,15 +70,15 @@ const filterGymMembers = (names, minimumLength) => {
   let newNames = [];
 
   for (let index = 0; index < names.length; index++) {
-    const name = names[index];
+    const member = names[index];
 
-    if (name.length >= minimumLength) {
-      newNames.push(name);
+    if (member.name.length >= minimumLength) {
+      newNames.push(member);
     }
   }
 
   return newNames;
 };
 
-const filteredGymMembers = filterGymMembers(listGymMember, 8);
+const filteredGymMembers = filterGymMembers(listGymMember, 12);
 console.log(filteredGymMembers);
